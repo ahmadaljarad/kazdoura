@@ -1,0 +1,1 @@
+Restoring the last full Damascus interface with categories, photos, galleries, and lazy image loading before reapplying landmark expansion without destructive replacement.
