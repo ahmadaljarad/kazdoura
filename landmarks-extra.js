@@ -20,3 +20,21 @@ window.KAZDOURA_EXTRA_LANDMARKS=[
 {n:['خان الحرير','Khan al-Harir','Khan al-Harir'],d:['خان تاريخي ارتبط بتجارة الحرير والمنسوجات في دمشق.','Historischer Khan des Seiden- und Textilhandels.','Historic khan associated with silk and textile trade.'],lat:33.5109,lng:36.3072},
 {n:['خان الجمرك','Khan al-Jumruk','Khan al-Jumruk'],d:['خان تجاري تاريخي في قلب أسواق دمشق القديمة.','Historischer Handelshof im Herzen der alten Souqs.','Historic commercial khan in the heart of the old souqs.'],lat:33.5099,lng:36.3077}
 ];
+
+/* Safe category expansion: runs after the main page has created `places`. */
+setTimeout(()=>{try{
+const X=(n,de,en,ar,dd,ed,lat,lng,imgs)=>({n:[n,de,en],d:[ar,dd,ed],lat,lng,imgs});
+const R='https://commons.wikimedia.org/wiki/Special:Redirect/file/'; const P=(...f)=>f.map(x=>R+encodeURIComponent(x));
+const add=(key,items)=>{const seen=new Set(places[key].map(x=>x.n[0]));items.forEach(x=>{if(!seen.has(x.n[0]))places[key].push(x)})};
+add('cafes',[
+X('مقهى الروضة','Café Al-Rawda','Al-Rawda Café','مقهى دمشقي تاريخي افتتح في أواخر ثلاثينيات القرن العشرين في شارع العابد، واشتهر كملتقى للكتّاب والصحفيين والفنانين.','Historisches Damaskener Café aus den späten 1930er-Jahren in der Al-Abed-Straße, bekannt als Treffpunkt von Schriftstellern, Journalisten und Künstlern.','Historic Damascus café dating to the late 1930s on Al-Abed Street, long known as a meeting place for writers, journalists and artists.',33.5171,36.2946),
+X('مقهى الهافانا','Havana Café','Havana Café','مقهى دمشقي تاريخي في وسط المدينة، معروف بجلساته التقليدية والقهوة وألعاب الطاولة.','Historisches Café im Zentrum von Damaskus mit traditioneller Atmosphäre, Kaffee und Brettspielen.','Historic central Damascus café known for its traditional atmosphere, coffee and table games.',33.515,36.294)
+]);
+add('markets',[
+X('سوق القباقبية','Souq al-Qabaqibiyya','Souq al-Qabaqibiyya','سوق حرفي تاريخي في دمشق القديمة، ارتبط بصناعة وبيع القباقيب الخشبية والحرف التقليدية.','Historischer Handwerksmarkt der Altstadt, traditionell mit Holzpantoffeln und Kunsthandwerk verbunden.','Historic Old Damascus craft market traditionally associated with wooden clogs and handicrafts.',33.5107,36.3067),
+X('سوق السروجية','Souq al-Surujiyah','Souq al-Surujiyah','سوق دمشقي تاريخي عُرف بصناعة السروج والمنتجات الجلدية ومستلزمات الخيل.','Historischer Damaskener Markt für Sattlerwaren, Lederprodukte und Reitzubehör.','Historic Damascus market known for saddlery, leather goods and equestrian equipment.',33.5154,36.2995),
+X('سوق الخياطين','Schneidermarkt','Tailors’ Souq','سوق تقليدي ضمن شبكة أسواق دمشق القديمة ارتبط بالخياطة والأقمشة.','Traditioneller Markt im Netz der Altstadt-Souqs, verbunden mit Schneiderei und Stoffen.','Traditional market in the Old City souq network associated with tailoring and textiles.',33.5104,36.306),
+X('سوق القيشاني','Souq al-Qishani','Souq al-Qishani','سوق صغير تاريخي ضمن أسواق المدينة القديمة والحرف التقليدية.','Kleiner historischer Markt innerhalb der traditionellen Altstadt-Souqs.','Small historic market within the traditional Old City souqs.',33.5106,36.307)
+]);
+if(document.getElementById('damascus')?.classList.contains('active'))city();
+}catch(e){console.warn('Kazdoura extra categories',e)}},0);
