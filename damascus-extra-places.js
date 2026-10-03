@@ -10,11 +10,7 @@ parks:[
 {n:['حديقة الجلاء','Al-Jalaa-Park','Al-Jalaa Park'],d:['مساحة خضراء مناسبة للمشي والجلسات العائلية ولعب الأطفال.','Grünanlage für Spaziergänge, Familien und Kinder.','Green space suitable for walking, family outings and children.'],lat:33.5292,lng:36.2716},
 {n:['حديقة العدوي','Al-Adawi-Park','Al-Adawi Park'],d:['حديقة واسعة وهادئة نسبياً ومناسبة للعائلات والأطفال.','Relativ ruhiger und großzügiger Park für Familien und Kinder.','A relatively quiet and spacious park suitable for families and children.'],lat:33.5302,lng:36.3094}
 ],
-family:[
-{n:['تجربة بوظة بكداش','Bakdash-Eis-Erlebnis','Bakdash Ice Cream Experience'],d:['تجربة عائلية في سوق الحميدية لمشاهدة تحضير البوظة الدمشقية التقليدية وتذوقها.','Familienerlebnis im Souq al-Hamidiyah: traditionelle Damascener Eiscreme erleben und probieren.','A family experience in Al-Hamidiyah Souq to watch and taste traditional Damascene ice cream.'],lat:33.5113,lng:36.3023},
-{n:['نزهة حديقة تشرين','Familienausflug im Tishreen-Park','Tishreen Park Family Outing'],d:['مساحات واسعة للمشي والرياضة ولعب الأطفال، مناسبة لنزهة عائلية طويلة داخل دمشق.','Große Flächen zum Spazieren, Sport und Spielen; geeignet für einen längeren Familienausflug.','Large areas for walking, sports and children’s play, suitable for a longer family outing.'],lat:33.5156,lng:36.2681},
-{n:['حديقة الجاحظ للأطفال','Al-Jahez-Park für Kinder','Al-Jahez Park for Kids'],d:['خيار هادئ للأطفال الصغار مع مساحة يسهل على الأهل مراقبتها وأماكن ظل وجلوس.','Ruhige Option für kleine Kinder mit überschaubarer Fläche, Schatten und Sitzplätzen.','A calm option for young children with an easy-to-supervise area, shade and seating.'],lat:33.5167,lng:36.2836}
-],
+family:[],
 hotels:[
 {n:['فندق داما روز','Dama Rose Hotel','Dama Rose Hotel'],d:['فندق خمس نجوم على شارع شكري القوتلي في وسط دمشق، يضم غرفاً وأجنحة ومطاعم ومرافق للاجتماعات والاستجمام.','Fünf-Sterne-Hotel an der Shukri-al-Quwatli-Straße im Zentrum von Damaskus mit Zimmern, Suiten, Gastronomie und weiteren Einrichtungen.','Five-star hotel on Shukri Al-Quwatli Street in central Damascus, with rooms, suites, dining and leisure facilities.'],lat:33.5138,lng:36.2922},
 {n:['فندق بيت الوالي','Beit Al Wali Hotel','Beit Al Wali Hotel'],d:['فندق بوتيك بطابع البيت الدمشقي التاريخي في المدينة القديمة قرب باب توما، ويقدم غرفاً وأجنحة متعددة.','Historisches Damascener Boutique-Hotel in der Altstadt nahe Bab Touma mit verschiedenen Zimmern und Suiten.','Historic Damascene boutique hotel in the Old City near Bab Touma, offering a range of rooms and suites.'],lat:33.5131,lng:36.3142}
