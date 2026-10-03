@@ -1,0 +1,1 @@
+Backup marker before restoring the last known good Kazdoura version. Safe to remove later.
