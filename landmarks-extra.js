@@ -36,5 +36,6 @@ X('سوق السروجية','Souq al-Surujiyah','Souq al-Surujiyah','سوق دم
 X('سوق الخياطين','Schneidermarkt','Tailors’ Souq','سوق تقليدي ضمن شبكة أسواق دمشق القديمة ارتبط بالخياطة والأقمشة.','Traditioneller Markt im Netz der Altstadt-Souqs, verbunden mit Schneiderei und Stoffen.','Traditional market in the Old City souq network associated with tailoring and textiles.',33.5104,36.306),
 X('سوق القيشاني','Souq al-Qishani','Souq al-Qishani','سوق صغير تاريخي ضمن أسواق المدينة القديمة والحرف التقليدية.','Kleiner historischer Markt innerhalb der traditionellen Altstadt-Souqs.','Small historic market within the traditional Old City souqs.',33.5106,36.307)
 ]);
+const s=document.createElement('script');s.src='damascus-extra-places.js?v=1';s.onload=()=>{try{add('restaurants',window.KAZDOURA_EXTRA_PLACES?.restaurants||[]);if(document.getElementById('damascus')?.classList.contains('active'))city();}catch(e){console.warn('Kazdoura restaurant merge',e)}};document.head.appendChild(s);
 if(document.getElementById('damascus')?.classList.contains('active'))city();
 }catch(e){console.warn('Kazdoura extra categories',e)}},0);
