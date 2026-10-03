@@ -22,11 +22,11 @@ const food={ar:['🍦 بوظة دمشقية','🥙 فتة','🍆 مكدوس','�
 function renderEventFilter(type){
  let box=$('subFilters'),today=new Date().toISOString().slice(0,10);
  let arr=places.events.filter(e=>(!e.end||e.end>=today)&&(type==='all'||e.type===type)).sort((a,b)=>(a.start||'').localeCompare(b.start||''));
- $('grid').innerHTML='';arr.forEach(p=>$('grid').appendChild(card(p,'events')));
+ $('cards').innerHTML='';arr.forEach(p=>card(p,'events'));
  box.querySelectorAll('.filterbtn').forEach(b=>b.classList.toggle('active',b.dataset.f===type));
 }
 function eventFilters(){
- let box=$('subFilters');
+ let box=$('subFilters');box.style.display='flex';
  let labels=lang==='ar'?{all:'الكل',expo:'🏢 معارض',conference:'🎓 مؤتمرات',sport:'🏃 رياضة',theater:'🎭 مسرح',music:'🎵 موسيقى',art:'🎨 فن',workshop:'🧩 ورشات',community:'🎲 ترفيه'}:
  lang==='de'?{all:'Alle',expo:'🏢 Messen',conference:'🎓 Konferenzen',sport:'🏃 Sport',theater:'🎭 Theater',music:'🎵 Musik',art:'🎨 Kunst',workshop:'🧩 Workshops',community:'🎲 Freizeit'}:
  {all:'All',expo:'🏢 Expos',conference:'🎓 Conferences',sport:'🏃 Sport',theater:'🎭 Theatre',music:'🎵 Music',art:'🎨 Art',workshop:'🧩 Workshops',community:'🎲 Community'};
